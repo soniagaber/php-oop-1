@@ -39,33 +39,33 @@ $movies[]=$batman;
 <body>
     <table border="2" >
 
-    <thead>
-    <tr>
-        <th>Titolo</th>
-        <th>Genere</th>
-        <th>Lingua</th>
-        <th>Anno di realizzazione</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-    <?php 
-
-        foreach($movies as $singleMovie) {
-        ?>
+        <thead>
         <tr>
-            <td><?= $singleMovie->getTitles() ?></td>
-            <td><?= $singleMovie->genre ?></td>
-            <td><?= $singleMovie->language ?></td>
-            <td><?= $singleMovie->release ?></td>
+            <th>Titolo</th>
+            <th>Genere</th>
+            <th>Lingua</th>
+            <th>Anno di realizzazione</th>
         </tr>
-        <?php
-        }
+        </thead>
+
+        <tbody>
         
-    
-    ?>
-    </tbody>
+        <?php 
+
+            foreach($movies as $singleMovie) {
+            ?>
+            <tr>
+                <td><?= $singleMovie->getTitles() ?></td>
+                <td><?= $singleMovie->genre ?></td>
+                <td><?= $singleMovie->language ?></td>
+                <td><?= $singleMovie->release ?></td>
+            </tr>
+            <?php
+            }
+            
+        
+        ?>
+        </tbody>
     </table>
     
 </body>
